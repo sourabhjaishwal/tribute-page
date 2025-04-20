@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elon Musk Tribute</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="theme-toggle">
+      <button id="toggleBtn">🌗</button>
+    </div>
+
+    <header class="header">
+      <h1>Elon Musk</h1>
+      <p>Entrepreneur, Engineer, Visionary</p>
+      <img src="elon-musk.jpg" alt="Elon Musk" class="elon-img" />
+    </header>
+
+    <main class="content">
+      <section>
+        <h2>About</h2>
+        <p>
+          Elon Musk is the CEO of Tesla, SpaceX, Neuralink, and The Boring
+          Company. Known for his bold visions and ambitious projects, he's
+          driving humanity toward a multi-planetary future.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Milestones</h2>
+        <ul>
+          <li><strong>2002:</strong> Founded SpaceX</li>
+          <li><strong>2004:</strong> Joined Tesla Motors</li>
+          <li>
+            <strong>2016:</strong> Founded Neuralink and The Boring Company
+          </li>
+          <li><strong>2022:</strong> Acquired Twitter (X)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Quotes</h2>
+        <blockquote>
+          "When something is important enough, you do it even if the odds are
+          not in your favor."
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Created with admiration by [Your Name] | 2025</p>
+    </footer>
+
+    <script>
+      const toggleBtn = document.getElementById("toggleBtn");
+      toggleBtn.addEventListener("click", () => {
+        const html = document.documentElement;
+        html.setAttribute(
+          "data-theme",
+          html.getAttribute("data-theme") === "dark" ? "light" : "dark"
+        );
+      });
+    </script>
+  </body>
+</html>
