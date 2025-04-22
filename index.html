@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,60 +7,55 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="theme-toggle">
-      <button id="toggleBtn">🌗</button>
+    <div class="container">
+      <header>
+        <h1>Elon Musk</h1>
+        <p class="subtitle">Entrepreneur, Engineer, Visionary</p>
+      </header>
+
+      <main>
+        <section class="about-section">
+          <img
+            src="https://i.pinimg.com/736x/1f/19/4c/1f194c6b80efc95f62031d39df039b42.jpg"
+            alt="Elon Musk"
+            class="profile-pic"
+          />
+          <div class="about-text">
+            <h2>About</h2>
+            <p>
+              Elon Musk is the CEO of Tesla, SpaceX, Neuralink, and The Boring
+              Company. Known for his bold visions and ambitious projects, he's
+              driving humanity toward a multi-planetary future.
+            </p>
+          </div>
+        </section>
+
+        <section class="flex-sections">
+          <div class="milestones">
+            <h2>Key Milestones</h2>
+            <ul>
+              <li>2002: Founded SpaceX</li>
+              <li>2004: Joined Tesla Motors</li>
+              <li>2016: Founded Neuralink and The Boring Company</li>
+              <li>2022: Acquired Twitter (X)</li>
+            </ul>
+          </div>
+
+          <div class="quotes">
+            <h2>Quotes</h2>
+            <blockquote>
+              <em
+                >"When something is important enough, you do it even if the odds
+                are not in your favor."</em
+              >
+            </blockquote>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Created with admiration!!</p>
+      </footer>
     </div>
-
-    <header class="header">
-      <h1>Elon Musk</h1>
-      <p>Entrepreneur, Engineer, Visionary</p>
-      <img src="elon-musk.jpg" alt="Elon Musk" class="elon-img" />
-    </header>
-
-    <main class="content">
-      <section>
-        <h2>About</h2>
-        <p>
-          Elon Musk is the CEO of Tesla, SpaceX, Neuralink, and The Boring
-          Company. Known for his bold visions and ambitious projects, he's
-          driving humanity toward a multi-planetary future.
-        </p>
-      </section>
-
-      <section>
-        <h2>Key Milestones</h2>
-        <ul>
-          <li><strong>2002:</strong> Founded SpaceX</li>
-          <li><strong>2004:</strong> Joined Tesla Motors</li>
-          <li>
-            <strong>2016:</strong> Founded Neuralink and The Boring Company
-          </li>
-          <li><strong>2022:</strong> Acquired Twitter (X)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Quotes</h2>
-        <blockquote>
-          "When something is important enough, you do it even if the odds are
-          not in your favor."
-        </blockquote>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>Created with admiration by [Your Name] | 2025</p>
-    </footer>
-
-    <script>
-      const toggleBtn = document.getElementById("toggleBtn");
-      toggleBtn.addEventListener("click", () => {
-        const html = document.documentElement;
-        html.setAttribute(
-          "data-theme",
-          html.getAttribute("data-theme") === "dark" ? "light" : "dark"
-        );
-      });
-    </script>
   </body>
 </html>
